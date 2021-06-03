@@ -27,6 +27,7 @@ def preprocessing(df):
     df['Date'] = pd.to_datetime(df.Date)
     df.replace(to_replace=CRIME_PRIMARY, inplace=True)
     print(df.dtypes)
+    print("hi ")
     # df.describe(include='all').to_csv("train_desc_after.csv",index=False)
 
 
